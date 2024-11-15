@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicación del Clima</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="weather-container">
+        <div id="map" style="height: 300px;"></div>
+
+        <div class="search">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Ingresa el nombre de una ciudad..."
+                autocomplete="off"
+            >
+            <button onclick="buscarCiudad()">Buscar</button>
+        </div>
+
+        <div class="weather-info">
+            <div class="main-temp">
+                <h1 id="temperature">--°C</h1>
+                <p id="description">Esperando búsqueda...</p>
+            </div>
+
+            <div id="forecast">
+                <div class="forecast-item">
+                    <span class="forecast-label">Humedad</span>
+                    <span id="humidity" class="forecast-value">--%</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="forecast-label">Viento</span>
+                    <span id="wind" class="forecast-value">-- km/h</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="forecast-label">Sensación</span>
+                    <span id="feels" class="forecast-value">--°C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
