@@ -1,0 +1,58 @@
+/* Fondo degradado */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Input de la ciudad */
+#cityInput {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Botón principal */
+button {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Historial de búsquedas */
+#history button {
+    margin-top: 5px;
+}
+
+/* Resultados */
+#result {
+    margin-top: 20px;
+    animation-duration: 1s;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Animaciones */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
